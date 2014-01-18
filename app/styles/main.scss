@@ -1,0 +1,39 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb li a.active{
+    font-weight: bold;
+}
+.messages-div,
+.login-form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.login-form {
+    margin-top: 20px;
+}
+.question-panel {
+    width: 500px;
+    margin: 0 auto;
+}
+.result-panel {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.progress {
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}

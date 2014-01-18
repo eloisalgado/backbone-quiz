@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "question": "When Cruzeiro Esporte Clube first won 'Campeonato Brasileiro'?",
+    "options": [1966, 1967, 1968, 1969, 1970],
+    "rightAnswer": 0,
+    "userAnswer": null
+  },
+  {
+    "id": 2,
+    "question": "In 2013, Cruzeiro Esporte Clube beated all teams in 'Campeonato Brasileiro'. Which team did that before?",
+    "options": ["São Paulo", "Santos", "Corinthians", "Internacional", "Cruzeiro was the first"],
+    "rightAnswer": 4,
+    "userAnswer": null
+  },
+  {
+    "id": 3,
+    "question": "When was the last time Cruzeiro Esporte Clube played 'Libertadores'?",
+    "options": [2009, 2010, 2011, 2008, 2004],
+    "rightAnswer": 1,
+    "userAnswer": null
+  },
+  {
+    "id": 4,
+    "question": "How many 'Copa do Brasil' tournaments Cruzeiro Esporte Clube won?" ,
+    "options": ["None", 1, 2, 3, 4],
+    "rightAnswer": 4,
+    "userAnswer": null
+  },
+  {
+    "id": 5,
+    "question": "Which of the teams below didn't played all the editions of 'Campeonato Brasileiro' in the first division?" ,
+    "options": ["Cruzeiro Esporte Clube", "São Paulo", "Atlético MG", "Internacional", "Santos"],
+    "rightAnswer": 2,
+    "userAnswer": null
+  }
+]

@@ -1,0 +1,10 @@
+<li class="list-group-item">
+  <strong><%- question %></strong>
+  <% if (!userAnswer) { %>
+    <span class="label label-warning pull-right">Not yet!</span>
+  <% } else if (rightAnswer == userAnswer) { %>
+    <span class="label label-success pull-right">You got it!</span>
+  <% } else { %>
+    <span class="label label-danger pull-right">Oh, no!</span>
+  <% } %>
+</li>

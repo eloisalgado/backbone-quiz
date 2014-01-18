@@ -1,0 +1,27 @@
+<div class="question-panel">
+  <div class="panel panel-default">
+    <div class="panel-heading">Question <%- id %></div>
+    <div class="panel-body">
+      <div class="question-title"><%- question %></div>
+    <% _.each(options, function(option, key) { %> 
+      <div class="radio">
+        <label>
+          <% if(key == userAnswer) { %>
+            <input type="radio" name="answer" value="<%- key %>" checked="checked"> <%- option %>
+          <% } else { %>
+            <input type="radio" name="answer" value="<%- key %>"> <%- option %>
+          <% } %>
+        </label>
+      </div>
+    <%});%>
+    </div>
+    <div class="panel-footer clearfix">
+      <div class="pull-left">
+        <button id="back-button" type="button" class="btn btn-warning btn-xs"><span class="glyphicon glyphicon-chevron-left"></span><span class="glyphicon glyphicon-chevron-left"></span> Back</button>
+      </div>
+      <div class="pull-right">
+        <button id="next-button" type="button" class="btn btn-success btn-xs" data-toggle="tooltip" data-placement="top" data-trigger="manual" data-original-title="You need to choose one option, man.">Shoot <span class="glyphicon glyphicon-chevron-right"></span><span class="glyphicon glyphicon-chevron-right"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
