@@ -9,7 +9,11 @@ To run the app with Yeoman, after install it, run "grunt server" and Yeoman will
 
 
 More information about the libs used:
+
 Backbone: http://backbonejs.org/
+
 RequireJs: http://requirejs.org/
+
 Bootstrap: http://getbootstrap.com
+
 Backbone.localStorage: https://github.com/jeromegn/Backbone.localStorage
