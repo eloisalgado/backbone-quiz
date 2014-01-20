@@ -5,7 +5,18 @@ A quiz with 5 questions made with Backbone, RequireJS and Bootstrap. Use Backbon
 
 All the app was built with Yeoman (http://yeoman.io/)
 
-To run the app with Yeoman, after install it, run "grunt server" and Yeoman will automatically build and run it on your browser.
+
+To run the app do the following:
+
+Install Yeoman if you don't have it:
+
+npm install -g yo
+
+npm install
+
+bower install
+
+grunt server
 
 
 More information about the libs used:
