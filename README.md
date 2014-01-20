@@ -16,6 +16,8 @@ npm install
 
 bower install
 
+grunt server
+
 
 More information about the libs used:
 
