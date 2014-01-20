@@ -26,8 +26,8 @@ require.config({
         backbone: '../bower_components/backbone/backbone',
         underscore: '../bower_components/underscore/underscore',
         bootstrap: '../bower_components/sass-bootstrap/dist/js/bootstrap',
-        localstorage: '../bower_components/backbone-localstorage/backbone.localStorage-min',
-        utils: '../bower_components/utils/utils'
+        localstorage: 'libs/backbone-localstorage/backbone.localStorage-min',
+        utils: 'libs/app-utils'
     }
 });
 

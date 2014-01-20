@@ -42,6 +42,7 @@ define([
 
         initialize: function() {
           Backbone.history.start({root: '#'});
+          this.loadData();
         },
 
         // Home

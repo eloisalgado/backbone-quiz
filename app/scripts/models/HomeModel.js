@@ -16,7 +16,7 @@ define([
         },
 
         initialize: function() {
-          this.fetch(); 
+          this.fetch();
         },
 
         getUsername: function() {
