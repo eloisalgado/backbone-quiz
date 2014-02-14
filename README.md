@@ -1,7 +1,7 @@
 backbone-quiz
 =============
 
-A quiz with 5 questions made with Backbone, RequireJS and Bootstrap. Use Backbone.localStorage to store data.
+A quiz with 5 questions made with Backbone, RequireJS, Handlebars and Bootstrap. Use Backbone.localStorage to store data.
 
 All the app was built with Yeoman (http://yeoman.io/)
 
@@ -24,6 +24,8 @@ More information about the libs used:
 Backbone: http://backbonejs.org/
 
 RequireJs: http://requirejs.org/
+
+Handlebars: http://handlebarsjs.com/
 
 Bootstrap: http://getbootstrap.com
 
