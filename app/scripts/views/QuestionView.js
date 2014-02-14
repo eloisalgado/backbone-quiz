@@ -4,13 +4,13 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'templates'
-], function ($, _, Backbone, JST) {
+    'text!../templates/QuestionView.hbs'
+], function ($, _, Backbone, QuestionView) {
     'use strict';
 
     var QuestionView = Backbone.View.extend({
 
-      template: JST['app/scripts/templates/QuestionView.ejs'],
+      template: Handlebars.compile(QuestionView),
 
       events: {
         'click #back-button': 'goBack',

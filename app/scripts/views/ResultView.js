@@ -4,15 +4,16 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'templates',
-    'models/HomeModel'
-], function ($, _, Backbone, JST, HomeModel) {
+    'models/HomeModel',
+    'text!../templates/ResultView.hbs',
+    'text!../templates/Graph.hbs'
+], function ($, _, Backbone, HomeModel, ResultView, Graph) {
     'use strict';
 
     var ResultviewView = Backbone.View.extend({
 
-        template: JST['app/scripts/templates/ResultView.ejs'],
-        graphTemplate: JST['app/scripts/templates/Graph.ejs'],
+        template: Handlebars.compile(ResultView),
+        graphTemplate: Handlebars.compile(Graph),
 
         events: {
           'click #try-again-btn': 'restartQuiz'
@@ -37,9 +38,9 @@ define([
           var homeModel = new HomeModel({
             id: 1
           });
-          var username = homeModel.get('username');
+          var username = homeModel.getUsername();
+          resultObj.user = homeModel.get('user');
           this.$el.html(this.template(resultObj));
-          this.$el.find('span.username').html(username == '' ? 'nobody' : homeModel.get('username'));
           this.$el.find('ul.list-group').html(resultObj.html);
           this.$el.find('div.progress-bar').css('width', total + '%');
           this.$el.find('div.progress').tooltip({

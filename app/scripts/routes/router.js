@@ -3,10 +3,13 @@
 define([
     'jquery',
     'backbone',
+    'handlebars',
+    'text',
     'localstorage',
     'utils',
-    'bootstrap'
-], function ($, Backbone, localstorage, utils) {
+    'bootstrap',
+    'handlebarsHelpers'
+], function ($, Backbone, Handlebars, text, localstorage, utils) {
     'use strict';
 
     var RouterRouter = Backbone.Router.extend({

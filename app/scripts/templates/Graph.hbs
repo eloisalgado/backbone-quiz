@@ -1,0 +1,12 @@
+<li class="list-group-item">
+  <strong>{{question}}</strong>
+  {{#unless userAnswer}}
+    <span class="label label-warning pull-right">Not yet!</span>
+  {{else}}
+    {{#ifEquals rightAnswer userAnswer}}
+      <span class="label label-success pull-right">You got it!</span>
+    {{else}}
+      <span class="label label-danger pull-right">Oh, no!</span>
+    {{/ifEquals}}
+  {{/unless}}
+</li>

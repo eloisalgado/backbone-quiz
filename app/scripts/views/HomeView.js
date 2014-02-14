@@ -4,16 +4,16 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'templates',
-    'models/HomeModel'
-], function ($, _, Backbone, JST, HomeModel) {
+    'models/HomeModel',
+    'text!../templates/HomeView.hbs'
+], function ($, _, Backbone, HomeModel, HomeView) {
     'use strict';
 
     var HomeView = Backbone.View.extend({
 
         className: 'login-page',
 
-        template: JST['app/scripts/templates/HomeView.ejs'],
+        template: Handlebars.compile(HomeView),
 
         events: {
           'submit #form-login': 'submit',
@@ -57,8 +57,7 @@ define([
             $('.messages-div').addClass('alert alert-danger').html(errorMsg);
           }
           else {
-            this.model.set('username', username.val());
-            this.model.set('email', email.val());
+            this.model.setFields(username.val(), email.val());
             this.model.saveInfo(this.redirect);
             $('.messages-div').html('');
           }

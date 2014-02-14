@@ -11,27 +11,39 @@ define([
         localStorage: new Backbone.LocalStorage("user-info"),
 
         defaults: {
-          username: '',
-          email: ''
+          user: {
+            name: '',
+            email: ''
+          }
         },
 
         initialize: function() {
           this.fetch();
         },
 
+        setFields: function(name, email) {
+          this.user = {
+            name: name,
+            email: email
+          };
+        },
+
         getUsername: function() {
-          return this.get('username');
+          var user = this.get('user');
+          return user.name;
         },
 
         getEmail: function() {
-          return this.get('email');
+          var user = this.get('user');
+          return user.email;
         },
 
         saveInfo: function(callback) {
-          this.save({
-            username: this.get('username'),
-            email: this.get('email')
-          });
+          this.save(
+            {
+              user: this.user
+            }
+          );
           if(typeof callback === 'function') {
             callback();
           }
